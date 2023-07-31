@@ -7,64 +7,78 @@
     android:background="@drawable/background2"
     tools:context=".HomePage">
 
-    <com.google.android.material.card.MaterialCardView
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView8"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
-        android:alpha="0.8"
-        android:background="@color/design_default_color_on_primary"
+        app:cardCornerRadius="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:paddingBottom="30dp">
+            android:paddingBottom="20dp">
+
 
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/concert_one"
-                android:text="Name Here"
+                android:text="Name"
                 android:textColor="@color/black"
                 android:textSize="40sp"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.029" />
+                app:layout_constraintTop_toTopOf="parent" />
 
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/textView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/concert_one"
-                android:text="One Stop For All"
-                android:layout_marginTop="2dp"
+                android:text="Tag"
                 android:textColor="@color/black"
-                android:textSize="16sp"
+                android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView" />
 
+            <com.glide.slider.library.SliderLayout
+                android:id="@+id/imageSlider"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="10dp"
+                app:auto_cycle="true"
+                android:layout_marginHorizontal="20dp"
+                app:indicator_visibility="invisible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/materialCardView"
                 android:layout_width="match_parent"
-                android:layout_height="140dp"
+                android:layout_height="90dp"
                 android:layout_marginTop="20dp"
+                app:strokeColor="@color/black"
+                app:strokeWidth="2dp"
                 android:layout_marginHorizontal="20dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView3"
-                app:layout_constraintVertical_bias="0.102">
+                app:layout_constraintTop_toBottomOf="@+id/imageSlider">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -76,9 +90,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/concert_one"
-                        android:text="Cusine"
+                        android:text="Cuisine"
                         app:colors="@array/gradient_colors"
                         android:textSize="50sp"
+                        app:maxFPS="100"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.5"
@@ -93,8 +108,10 @@
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/materialCardView2"
                 android:layout_width="match_parent"
-                android:layout_height="140dp"
+                android:layout_height="90dp"
                 android:layout_marginTop="15dp"
+                app:strokeColor="@color/black"
+                app:strokeWidth="2dp"
                 android:layout_marginHorizontal="20dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -114,6 +131,7 @@
                         android:fontFamily="@font/concert_one"
                         android:text="Tourism"
                         app:colors="@array/gradient_colors"
+                        app:maxFPS="100"
                         android:textSize="50sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -126,27 +144,33 @@
 
             </com.google.android.material.card.MaterialCardView>
 
+
             <com.google.android.material.card.MaterialCardView
+                android:id="@+id/materialCardView3"
                 android:layout_width="match_parent"
-                android:layout_height="140dp"
-                android:layout_marginHorizontal="20dp"
+                android:layout_height="90dp"
                 android:layout_marginTop="15dp"
+                app:strokeColor="@color/black"
+                app:strokeWidth="2dp"
+                android:layout_marginHorizontal="20dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/materialCardView2"
-                app:layout_constraintVertical_bias="0.902">
+                app:layout_constraintVertical_bias="0.502">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@drawable/clothes">
 
+
                     <com.mursaat.extendedtextview.AnimatedGradientTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/concert_one"
-                        android:text="Clothing"
+                        android:text="Clothes"
+                        app:maxFPS="100"
                         app:colors="@array/gradient_colors"
                         android:textSize="50sp"
                         app:layout_constraintBottom_toBottomOf="parent"
@@ -160,10 +184,12 @@
 
             </com.google.android.material.card.MaterialCardView>
 
+
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
+    </androidx.cardview.widget.CardView>
 
-    </com.google.android.material.card.MaterialCardView>
 
 
 
