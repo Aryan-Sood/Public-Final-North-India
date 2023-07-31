@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <array name="gradient_colors">
+        <item>@color/materialRed</item>
+        <item>@color/white</item>
+        <item>@color/black</item>
+        <item>@color/materialPurple</item>
+    </array>
+
+
+</resources>

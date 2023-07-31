@@ -72,12 +72,12 @@
                     android:background="@drawable/food">
 
 
-                    <TextView
+                    <com.mursaat.extendedtextview.AnimatedGradientTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/concert_one"
                         android:text="Cusine"
-                        android:textColor="@android:color/background_light"
+                        app:colors="@array/gradient_colors"
                         android:textSize="50sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -108,12 +108,12 @@
                     android:background="@drawable/tourism">
 
 
-                    <TextView
+                    <com.mursaat.extendedtextview.AnimatedGradientTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/concert_one"
                         android:text="Tourism"
-                        android:textColor="@color/white"
+                        app:colors="@array/gradient_colors"
                         android:textSize="50sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -142,12 +142,12 @@
                     android:layout_height="match_parent"
                     android:background="@drawable/clothes">
 
-                    <TextView
+                    <com.mursaat.extendedtextview.AnimatedGradientTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/concert_one"
                         android:text="Clothing"
-                        android:textColor="@color/white"
+                        app:colors="@array/gradient_colors"
                         android:textSize="50sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
