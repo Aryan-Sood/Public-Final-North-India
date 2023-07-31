@@ -57,21 +57,25 @@ public class HomePage extends AppCompatActivity {
         materialCardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(HomePage.this, "Cuisine", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(HomePage.this, "Cuisine", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(HomePage.this, Food_Activity.class);
+                startActivity(intent);
             }
         });
 
         materialCardView2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(HomePage.this, "Tourism", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(HomePage.this, "Tourism", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(HomePage.this, TourismPage.class);
+                startActivity(intent);
             }
         });
 
         materialCardView3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(HomePage.this, "Clothes", Toast.LENGTH_SHORT).show();
+                Toast.makeText(HomePage.this, "Coming Soon", Toast.LENGTH_SHORT).show();
             }
         });
 

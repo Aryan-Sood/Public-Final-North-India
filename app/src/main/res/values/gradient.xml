@@ -2,10 +2,24 @@
 <resources>
     
     <array name="gradient_colors">
-        <item>@color/materialRed</item>
-        <item>@color/white</item>
-        <item>@color/black</item>
-        <item>@color/materialPurple</item>
+        <item>#1EDD55</item>
+        <item>#EA6464</item>
+        <item>#E48118</item>
+    </array>
+
+
+    <array name="gradient_colors_cltohes">
+        <item>#7A16EC</item>
+        <item>#16ECE5</item>
+        <item>#F4DA2E</item>
+
+    </array>
+
+
+    <array name="gradient_clothes">
+        <item>#286806</item>
+        <item>#06309A</item>
+        <item>#A6069E</item>
     </array>
 
 
